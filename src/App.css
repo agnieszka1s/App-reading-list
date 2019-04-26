@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Arapey|Catamaran|Dokdo|Shadows+Into+Light');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+}
+
+body {
+  margin: 25px auto;
+  background-size: cover;
+  background: white url("bee-705412_1280.png") no-repeat fixed right bottom;
+  font-family: 'Arapey', serif;
+}
+
+.App {
+  border: 5px solid #3d3d5c;
+  border-radius: 1%;
+  /*background-color: hsla(120, 100%, 50%, 0.3);*/
+  background-color: #F8D424;
+  text-align: center;
+  margin: 20px;
+  width: 65%;
+  height: auto;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+/*icons*/
+.fa-coffee {
+  margin: 5px;
+  font-size: 1.5em;
+}
+.icon-emo-thumbsup {
+  margin-left: 15px;
+  display: inline;
+}
+.fa-book-open {
+  margin: 40px;
+  color: #32393B;
+}
+.fa-trash {
+  display: block;
+  float: right;
+  color: #32393B;
+  cursor: pointer;
+}
+.fa-book {
+  display: block;
+  float: right;
+  color: #32393B;
+  margin-right: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.fa-trash-alt {
+  cursor: pointer;
+}
+
+.appName {
+  font-size: 55px;
+  font-weight: 900;
+  color: #32393B;
+}
+.placeholder {
+  font-family: 'Indie Flower', cursive;
+  font-size: 0.8em;
+  color: #393539;
+  background-color: white;
+  border-color: #32393B;
+  width: 350px;
+  margin-left: 75px;
+  height: 35px;
+}
+
+.addItem {
+  /*border: 2px solid #3d3d5c;*/
+  margin: 15px;
+  padding: 15px;
+  background-color: #F8D424;
+  font-weight: 900;
+  font-size: 20px;
+  color: #32393B;
+}
+.addButton {
+  cursor: pointer;
+  border-radius: 4em;
+  border-color: #32393B;
+  width: 60px;
+  height: 40px;
+  color: white;
+  background-color:#32393B;
+  margin: 10px;
+  font-style: italic;
+  font-family: 'Arapey', serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+}
+
+.addButton:hover {
+  color: white;
+}
+.fa-book-open:hover .iconSpan {
+  display: inline;
+  position: absolute;
+  margin: 15px 0 0 5px;
+  background: white;
+  border: 2px solid #32393B;
+  color: #32393B;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  text-align: center;
+  font-size: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+.iconSpan {
+  height: 50px;
+  width: 50px;
+  font-size: 12px !important;
+  margin-bottom: 5px;
+}
+
+i span, li span  {
+  display: none;
+  padding: 2px 3px;
+  margin-left: 8px;
+  width: 130px;
+}
+
+i:hover .finishedSpan, i:hover .deleteItemSpan{
+  display: inline;
+  position: absolute;
+  margin: 15px 0 0 5px;
+  background: white;
+  border: 2px solid #32393B;
+  color: #32393B;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  text-align: center;
+  font-size: 0.8em;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.buttonDelete {
+  background-color: #32393B;
+  border-color: #32393B;
+  margin: 15px;
+  width: 15px;
+  height: 15px;
+  text-align:center;
+  vertical-align: middle;
+  display: inline;
+  font-size: large;
+}
+i:active {
+  transform: scale(.90);
+  transition: transform .1s;
+}
+li {
+  padding: 5px;
+}
+ul {
+  list-style-type: decimal;
+  text-align: left;
+  color: #475069;
+}
+i, p {
+  display: inline;
+}
+
+.deleteAll div, .deleteAll i.fas {
+  color: #32393B;
+  margin: 10px;
+  float: right;
+  font-size: 1.8em;
+  font-weight: 900;
+}
+button:active {
+  transform: scale(.80);
+  transition: transform .1s;
+}
+@media (orientation: portrait) {  /*portrait: czyli wysokość większa niż szerokość */
+  .App{
+    width: 95%;
+    height: 40%;
+  }
+}
