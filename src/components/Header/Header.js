@@ -10,7 +10,6 @@ class Header extends Component{
                 Reading List
                 <i className="fas fa-book-open"><span className="iconSpan">Grab a coffee & enjoy your read<i className="fas fa-coffee"/></span></i>
             </div>
-
         )
     }
 }
