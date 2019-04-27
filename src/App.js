@@ -3,6 +3,8 @@ import './App.css';
 import Header from "./components/Header/Header";
 import ButtonDeleteAll from "./components/ButtonDeleteAll/ButtonDeleteAll";
 import ItemsList from "./components/ItemsList/ItemsList";
+import ButtonAdd from "./components/ButtonAdd/ButtonAdd";
+import Placeholder from "./components/Placeholder/Placeholder";
 
 
 class App extends Component {
@@ -76,24 +78,13 @@ class App extends Component {
         return (
             <div className="App">
                 <Header/>
-                <div className="addItem">
-                    <input className="placeholder"
-                           onKeyPress={this.handleKeyPress}
-                           type="text"
-                           placeholder="Type item here..."
-                           value={this.state.newItem}
-                           onChange={event =>
-                               this.updateInput("newItem", event.target.value)}
-                    />
-                    <button className="addButton"
-                            onClick={() => this.addItem()}
-                    >Add</button>
+                <div className="addBook">
+                  <Placeholder handleKeyPress={this.handleKeyPress} newItem={this.newItem} updateInput={this.updateInput}/>
+                  <ButtonAdd addItem={this.addItem}/>
                     <br/>
                    <ItemsList list={this.state.list} deleteItem={this.deleteItem} checkHandler={this.checkHandler}/>
                 </div>
                 <ButtonDeleteAll deleteAll={this.deleteAll} />
-
-
             </div>
         );
     }
