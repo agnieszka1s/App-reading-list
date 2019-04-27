@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./ButtonDeleteAll.css"
 
 class ButtonDeleteAll extends Component{
 
@@ -16,3 +17,4 @@ class ButtonDeleteAll extends Component{
 }
 
 export default ButtonDeleteAll;
+

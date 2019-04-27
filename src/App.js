@@ -6,7 +6,6 @@ import ItemsList from "./components/ItemsList/ItemsList";
 import ButtonAdd from "./components/ButtonAdd/ButtonAdd";
 import Placeholder from "./components/Placeholder/Placeholder";
 
-
 class App extends Component {
     constructor(props){
         super(props);
@@ -79,9 +78,8 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 <div className="addBook">
-                  <Placeholder handleKeyPress={this.handleKeyPress} newItem={this.newItem} updateInput={this.updateInput}/>
+                  <Placeholder handleKeyPress={this.handleKeyPress} newItem={this.state.newItem} updateInput={this.updateInput}/>
                   <ButtonAdd addItem={this.addItem}/>
-                    <br/>
                    <ItemsList list={this.state.list} deleteItem={this.deleteItem} checkHandler={this.checkHandler}/>
                 </div>
                 <ButtonDeleteAll deleteAll={this.deleteAll} />

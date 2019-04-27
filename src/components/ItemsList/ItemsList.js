@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./ItemsList.css"
 
 class ItemsList extends Component{
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./Placeholder.css"
 
 class Placeholder extends Component{
 

@@ -1,0 +1,37 @@
+.appName{
+    font-size: 55px;
+    font-weight: 900;
+    color: #32393B;
+}
+
+.iconSpan{
+    height: 50px;
+    width: 50px;
+    font-size: 12px !important;
+    margin-bottom: 5px;
+}
+
+.fa-book-open:hover .iconSpan{
+    display: inline;
+    position: absolute;
+    margin: 15px 0 0 5px;
+    background: white;
+    border: 2px solid #32393B;
+    color: #32393B;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    text-align: center;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.fa-coffee{
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+.fa-book-open{
+    margin: 40px;
+    color: #32393B;
+}

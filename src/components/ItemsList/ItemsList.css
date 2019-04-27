@@ -1,0 +1,68 @@
+ul{
+    list-style-type: decimal;
+    text-align: left;
+    color: #475069;
+}
+
+li{
+    padding: 5px;
+}
+
+i, p{
+    display: inline;
+}
+
+i:active{
+    transform: scale(.90);
+    transition: transform .1s;
+}
+
+i span, li span{
+    display: none;
+    padding: 2px 3px;
+    margin-left: 8px;
+    width: 130px;
+}
+
+i:hover .finishedSpan, i:hover .deleteItemSpan{
+    display: inline;
+    position: absolute;
+    margin: 15px 0 0 5px;
+    background: white;
+    border: 2px solid #32393B;
+    color: #32393B;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    text-align: center;
+    font-size: 0.8em;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.fa-trash-alt{
+    cursor: pointer;
+}
+
+.fa-trash{
+    display: block;
+    float: right;
+    color: #32393B;
+    cursor: pointer;
+}
+
+.fa-book{
+    display: block;
+    float: right;
+    color: #32393B;
+    margin-right: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.icon-emo-thumbsup {
+    margin-left: 15px;
+    display: inline;
+}
+
+
+

@@ -1,0 +1,23 @@
+.deleteAll div, .deleteAll i.fas{
+    color: #32393B;
+    margin: 10px;
+    float: right;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+.buttonDelete{
+    background-color: #32393B;
+    border-color: #32393B;
+    margin: 15px;
+    width: 15px;
+    height: 15px;
+    text-align:center;
+    vertical-align: middle;
+    display: inline;
+    font-size: large;
+}
+
+.fa-trash-alt{
+    cursor: pointer;
+}
