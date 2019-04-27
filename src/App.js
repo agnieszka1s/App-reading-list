@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
+import ButtonDeleteAll from "./components/ButtonDeleteAll/ButtonDeleteAll";
 
 
 class App extends Component {
@@ -111,12 +112,9 @@ class App extends Component {
                         })}
                     </ul>
                 </div>
-                <div className="deleteAll">
-                    <div>Delete all</div>
-                    <i className="fas fa-trash-alt"
-                       onClick={() => (this.deleteAll())}
-                    />
-                </div>
+                <ButtonDeleteAll deleteAll={this.deleteAll} />
+
+
             </div>
         );
     }
