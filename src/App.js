@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
 import ButtonDeleteAll from "./components/ButtonDeleteAll/ButtonDeleteAll";
+import ItemsList from "./components/ItemsList/ItemsList";
 
 
 class App extends Component {
@@ -87,30 +88,8 @@ class App extends Component {
                     <button className="addButton"
                             onClick={() => this.addItem()}
                     >Add</button>
-
                     <br/>
-                    <ul>
-                        {this.state.list.map(item => {
-                            return(
-                                <div>
-                                    <li className="val" key={item.id} style={{
-                                        textDecoration: item.checked ? 'line-through' : 'none',
-                                    }}><p>{item.value}</p>
-                                        <i className ="fas fa-trash"
-                                           onClick={() => this.deleteItem(item.id)}><span className="deleteItemSpan">Delete item</span></i>
-                                        <i className ="fas fa-book"
-                                           onClick={() => {
-                                               this.checkHandler(item.id);
-                                           }}><span className="finishedSpan">Finished</span>
-                                        </i>
-                                        <i className="demo-icon icon-emo-thumbsup"
-                                           style={{
-                                               display: item.checked ? 'inline' : 'none',
-                                           }}/>
-                                    </li>
-                                </div>)
-                        })}
-                    </ul>
+                   <ItemsList list={this.state.list} deleteItem={this.deleteItem} checkHandler={this.checkHandler}/>
                 </div>
                 <ButtonDeleteAll deleteAll={this.deleteAll} />
 
