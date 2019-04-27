@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import "./ButtonAdd.css"
+import './ButtonAdd.css';
 
-class ButtonAdd extends Component{
-
-    render (){
-        console.log(this.props);
-        return(
-            <button className="addButton"
-                    onClick={() => this.props.addItem()}
-            >Add</button>
-        )}
+class ButtonAdd extends Component {
+  render() {
+    console.log(this.props);
+    return (
+      <button className="addButton" onClick={() => this.props.addItem()}>
+        Add
+      </button>
+    );
+  }
 }
 
 export default ButtonAdd;
